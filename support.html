@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Word Printer — Support</title>
+  <style>
+    :root{--bg:#0b1220;--card:#111a2e;--text:#eaf0ff;--muted:#a8b3d6;--border:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);line-height:1.55}
+    header{padding:16px 18px;border-bottom:1px solid var(--border);background:rgba(11,18,32,.9);position:sticky;top:0}
+    nav a{color:var(--muted);text-decoration:none;margin-right:12px;padding:8px 10px;border-radius:10px}
+    nav a:hover{color:var(--text);background:rgba(255,255,255,.04)}
+    .wrap{max-width:900px;margin:0 auto;padding:22px 18px 60px}
+    .card{background:rgba(17,26,46,.86);border:1px solid var(--border);border-radius:16px;padding:18px;margin:14px 0}
+    h1{margin:6px 0 6px}
+    h2{margin:0 0 8px;font-size:18px}
+    p{margin:0 0 10px;color:var(--muted)}
+    label{display:block;margin:10px 0 6px;color:var(--muted);font-size:14px}
+    input, textarea{
+      width:100%; padding:10px 12px; border-radius:12px; border:1px solid var(--border);
+      background:rgba(255,255,255,.03); color:var(--text); outline:none;
+    }
+    textarea{min-height:120px; resize:vertical}
+    button{
+      margin-top:10px; padding:10px 14px; border-radius:12px; border:1px solid var(--border);
+      background:rgba(255,255,255,.06); color:var(--text); cursor:pointer; font-weight:650;
+    }
+    button:hover{background:rgba(255,255,255,.09)}
+    .small{font-size:12px;color:var(--muted)}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Support</h1>
+    <p>Need help with Word Printer? Use the options below.</p>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:support@example.com">support@example.com</a>
+        <span class="small">(replace with your real support email)</span>
+      </p>
+      <p class="small">
+        Tip: include your device, browser/app version, and steps to reproduce the issue.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Common questions</h2>
+      <ul>
+        <li><strong>Printing looks different:</strong> try “Print preview”, set margins to default, and disable headers/footers if needed.</li>
+        <li><strong>Text is cut off:</strong> reduce font size or switch to a multi-column/compact layout in the app (if available).</li>
+        <li><strong>Export options:</strong> if the app supports export, try PDF for consistent results.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Send a message (optional form)</h2>
+      <!-- This form is static; connect it to your backend or service if you want submissions. -->
+      <form onsubmit="event.preventDefault(); alert('Form is a template. Connect to your backend or support system.');">
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Printing issue / Feature request / Bug report" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Describe what happened and what you expected..." required></textarea>
+
+        <button type="submit">Submit</button>
+        <div class="small" style="margin-top:8px">
+          Last updated: <time datetime="2026-03-16">2026-03-16</time>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
